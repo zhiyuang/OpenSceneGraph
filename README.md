@@ -123,3 +123,13 @@ Be sure to set the THIRDPARTY_PATH to the path containing your thirdparty depend
 Once this completes an XCode project will have been generated in the osg root folder. Open the generated Xcode project, select the example_osgViewerIPhone target. In 'General' tab set a development team.
 
 Once this is done you should be able to build and deploy the `example_osgViewerIPhone` target on your device.
+
+
+# 本地构建
+设置 MacOS 环境变量
+
+```
+export PATH="$HOME/Documents/opensources/OpenSceneGraph/bin:$HOME/Documents/opensources/OpenSceneGraph/lib/osgPlugins-3.7.0:$PATH"
+export OSG_FILE_PATH="$HOME/Documents/opensources/OpenSceneGraph-Data:$HOME/Documents/opensources/OpenSceneGraph-Data/Images"
+export DYLD_LIBRARY_PATH="$HOME/Documents/opensources/OpenSceneGraph/lib/osgPlugins-3.7.0:$HOME/Documents/opensources/OpenSceneGraph/lib:$DYLD_LIBRARY_PATH"
+```
